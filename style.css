@@ -1,0 +1,160 @@
+@media(min-width: 600px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .movie {
+        width: 400px;
+        height: 300px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    body {
+        /*グラデーション*/
+        background: linear-gradient(to right, red, blue);
+        text-align: center;
+    }
+
+    .back {
+        background-color: #000000;
+    }
+
+    h1 {
+        font-size: 400%;
+        padding: 1.2rem;
+    }
+
+    .redbody {
+        font-family: serif;
+        font-size: 200%;
+        color: white;
+        background: linear-gradient(to right, green, rgb(171, 4, 255));
+    }
+
+    .mix {
+        position: relative;
+        display: inline-block;
+    }
+
+    nav {
+        width: 100%;
+        height: 70px;
+        background-color: gray;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .ul {
+        display: flex;
+        white-space: nowrap;
+    }
+
+    li {
+        list-style: none;
+        text-align: center;
+        text-align: center;
+    }
+
+    li:last-child {
+        border: none;
+    }
+
+    nav ul li {
+        padding-left: 15px;
+        border-right: 1px solid white;
+
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+        font-size: 110%;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .round {
+        background-color: rgb(49, 143, 211);
+        /*四角形の角を丸める*/
+        border-radius: 30px;
+        /*文字の大きさに背景を合わせる*/
+        display: inline-block;
+        /*文字と背景の間に隙間を開ける*/
+        padding: 0.6%;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    .shadow {
+        padding: 10px;
+        color: #CCC;
+        font-weight: bold;
+        font-size: 90%;
+        text-shadow:
+            3px 3px 3px #000, -3px -3px 3px #000,
+            -3px 3px 3px #000, 3px -3px 3px #000;
+    }
+
+    a.btn-sns {
+        font-size: 2.4rem;
+        line-height: 50px;
+
+        width: 50px;
+        height: 50px;
+        padding: 0;
+
+        letter-spacing: 0;
+
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    a.btn-sns--youtube {
+        background: #cd201f;
+    }
+
+    /*
+  .fadein {
+    opacity: 0;
+    transform : translate(0, 50px);
+    transition : all 1500ms;
+  }
+  
+  .fadein.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+*/
+    .class {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
